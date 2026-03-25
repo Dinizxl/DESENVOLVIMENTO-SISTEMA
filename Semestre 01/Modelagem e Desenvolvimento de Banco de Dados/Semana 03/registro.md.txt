@@ -1,0 +1,7 @@
+cliente : guarda os dados de quem compra ( nome, endereço e email)
+
+produto :   guarda os detalhes do que é vendido ( preço e estoque)
+
+vendedore: identifica quem faz a venda e qual a sua comissao 
+
+pedidos: registra venda, ligando o cliente ao vendedor e a data da venda .

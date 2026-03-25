@@ -1,0 +1,25 @@
+Semana 01 - Aula 02
+
+Eric Diniz
+
+Pedro Henrique
+
+Android e IOS 
+
+android e ios são sistemas operacionais para celulares , com alguns pontos em comum e diferenças relevantes nas quais um leva vantagem sobre o outro. Para comparar um com o outro, o usuário deve considerar tópicos importantes como interface, usabilidade, recursos, segurança e inteligencia artificial. 
+
+Qual plataforma oferece maior flexibilidade para personalização do aplicativo?
+
+Máxima Flexibilidade: Desenvolvimento Nativo (Android Studio, Swift/Xcode) ou Frameworks.
+
+Alta Flexibilidade + Rapidez: FlutterFlow, Bubble.
+
+Flexibilidade Empresarial: OutSystems, Mendix
+
+ Qual plataforma tem um ambiente de desenvolvimento mais controlado e consistente?
+
+A plataforma com o ambiente de desenvolvimento mais controlado e consistente é o IOS da apple
+
+A plataforma com o ambiente de desenvolvimento mais controlado e consistente é o iOS da Apple?
+
+A plataforma IOS é muito mais restrita e controlada, pois a Apple controla a distribuição de aplicativos e atualizações de sistemas.
