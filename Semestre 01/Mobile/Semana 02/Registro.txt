@@ -1,0 +1,10 @@
+Criação de uma Activity simples e adição de um Fragment. Aprender a criar uma Activity em um projeto Android e adicionar um Fragment para dividir e organizar a interface do aplicativo.
+
+
+Primeiro foi aberto o Android Studio e criado um novo projeto usando o modelo Empty Activity. A Activity foi nomeada como MainActivity. No arquivo activity_main.xml, foram adicionados alguns elementos simples de interface, como um TextView ou Button, para visualizar o layout.
+
+Depois foi criado um Fragment chamado ExampleFragment, junto com seu arquivo de layout fragment_example.xml, onde foi colocado um TextView simples.
+
+Em seguida, no arquivo activity_main.xml, foi adicionado um FrameLayout, que serviu como espaço para inserir o Fragment. No arquivo MainActivity, foi utilizado o FragmentManager para adicionar o ExampleFragment dentro do FrameLayout.
+
+Por fim, o aplicativo foi executado para verificar se o Fragment aparecia corretamente dentro da Activity.O Fragment foi exibido dentro da Activity, mostrando como é possível dividir a interface do aplicativo em partes menores e organizadas.

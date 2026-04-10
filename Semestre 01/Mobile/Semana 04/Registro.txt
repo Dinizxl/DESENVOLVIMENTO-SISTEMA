@@ -1,0 +1,7 @@
+Assunto: Definição técnica: Fluxo de navegação e integridade de dados
+Prezada Liderança Técnica,
+Gostaríamos de informar que definimos a estratégia de navegação para o nosso aplicativo de catálogo de produtos. Para garantir a qualidade da entrega e facilitar a manutenção a longo prazo, optamos por passar apenas o ID do produto da tela principal para a de detalhes via parâmetros de rota.
+Essa abordagem permite que a tela de detalhes seja responsável por buscar as informações mais atualizadas diretamente da fonte de dados, evitando a exibição de conteúdos obsoletos e garantindo a consistência das informações, como preço e estoque. Além disso, configuramos a tela de detalhes para gerenciar de forma independente os estados de carregamento e possíveis erros de busca, o que torna a experiência do usuário mais robusta.
+Acreditamos que essa escolha técnica isola melhor as responsabilidades de cada componente e deixa o projeto pronto para futuras expansões, como a implementação de links diretos para produtos.
+Estamos à disposição para qualquer ajuste necessário.
+Atenciosamente, Eric diniz
