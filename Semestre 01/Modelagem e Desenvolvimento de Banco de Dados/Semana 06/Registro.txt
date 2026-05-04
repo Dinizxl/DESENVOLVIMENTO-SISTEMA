@@ -1,0 +1,49 @@
+semana 06 
+
+Eric Diniz Monteiro 
+
+CREATE TABLE Salas (
+    SalaID INT PRIMARY KEY,
+    NomeSala VARCHAR(50)
+);
+
+CREATE TABLE Reservas (
+    ReservaID INT AUTO_INCREMENT PRIMARY KEY,
+    SalaID INT,
+    DataReserva DATETIME,
+    Usuario VARCHAR(100),
+    FOREIGN KEY (SalaID) REFERENCES Salas(SalaID)
+);
+
+INSERT INTO Salas (SalaID, NomeSala) VALUES (1, 'Sala A');
+
+
+SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+BEGIN;
+
+
+INSERT INTO Reservas (SalaID, DataReserva, Usuario)
+SELECT 1, '2024-08-21 10:00:00', 'Pedro'
+WHERE NOT EXISTS (
+    SELECT 1 FROM Reservas
+    WHERE SalaID = 1 AND DataReserva = '2024-08-21 10:00:00'
+);
+
+
+COMMIT;
+
+
+ROLLBACK;
+
+SELECT * FROM Reservas,salas;
+
+DATETIME : E usado para fornecer os valores de data e hora, mais usado em datas  fixas com eventos e aniversários
+
+SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE: Controla o comportamento de bloqueio e versionamento de linhas das instruções Transact-SQL emitidas por uma conexão com o SQL Server 
+
+BEGIN: é usado para iniciar uma nova transação, desativando o modo de confirmação automática  para garantir a integridade dos dados
+
+INSERT INTO: A instrução é usada para adicionar novos registros a uma tabela.
+
+ROLLBAC: desfaz alterações não confirmadas de uma transação, revertendo o banco de dados ao estado do último
